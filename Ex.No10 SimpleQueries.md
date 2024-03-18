@@ -1,6 +1,6 @@
 # Ex.No: 10  Logic Programming –  Simple queries from facts and rules
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:18-03-2024                                                                            
+### REGISTER NUMBER : 212221040080
 ### AIM: 
 To write a prolog program to find the answer of query. 
 ###  Algorithm:
@@ -21,9 +21,18 @@ Construct the FOL representation for the following sentences <br>
 5.	 Bill eats peanuts  <br> 
    Convert into clause form and Prove that John like Apple by using Prolog. <br> 
 ### Program:
-
+```
+likes(john, X) :- food(X).
+food(apples).
+food(chicken).
+eats(sue, X) :- eats(bill, X).
+eats(bill, peanuts).
+```
 
 ### Output:
+
+![Screenshot (205)](https://github.com/KayyuruTharani/AI_Lab_2023-24/assets/142209319/fb4a0e1e-3142-4674-9e62-ad6b132cc2d3)
+
 
 ### Task 2:
 Consider the following facts and represent them in predicate form: <br>              
@@ -34,15 +43,26 @@ Consider the following facts and represent them in predicate form: <br>
 Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
 
 ### Program:
+```
+likes(steve, X) :- easy(X).
+hard(science_courses).
+easy(X) :- in_have_fun_department(X).
+in_have_fun_department(bk301).
+```
 
 
 ### Output:
+
+![Screenshot (206)](https://github.com/KayyuruTharani/AI_Lab_2023-24/assets/142209319/0d7ee499-c16e-4487-9ad6-ad3fb1abd25d)
+
 
 ### Task 3:
 Consider the statement <br> 
 “This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
 Convert to Clause form and prove west is criminal by using Prolog.<br> 
 ### Program:
+
+
 
 
 ### Output:
